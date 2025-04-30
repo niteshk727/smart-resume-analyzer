@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <h1>Upload Resume and Job Description</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="resume">Upload Resume:</label>
+            <br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+            <label for="job_description">Upload Job Description:</label>
+            <br>
+            <textarea id="job_description" name="job_description" rows="10" cols="50" required></textarea><br><br>
+            <input type="submit" value="Analyze">
+        </form>
+    </body>
+</html>
